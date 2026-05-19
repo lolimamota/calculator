@@ -5,5 +5,7 @@ programa{
         escreva("Faça aqui sua continha rápida!\n")
         escreva(" ")
         escreva("Escolha sua operação!\n 1. Adição (+)\n 2. Subtração (-)\n 3. Multiplicação (*)\n 4. Divisão (/)\n")
+        inteiro opcao
+        leia(opcao)
     }
 }
