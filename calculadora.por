@@ -4,7 +4,7 @@ programa{
     funcao inicio(){
         escreva("Faça aqui sua continha rápida!\n")
         escreva(" ")
-        escreva("Escolha sua operação!\n 1. Adição (+)\n 2. Subtração (-)\n 3. Multiplicação (*)\n 4. Divisão (/)\n")
+        escreva("Escolha sua operação!\n 1. Adição (+)\n 2. Subtração (-)\n 3. Multiplicação (*)\n 4. Divisão (/)\n 5. Sair")
         inteiro opcao
         leia(opcao)
     }
