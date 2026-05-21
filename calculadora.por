@@ -1,5 +1,12 @@
+//DS 14 - Lorrayne Caroline Lima Mota
+// Desenvolva um programa de uma calculadora simples apenas com as operações básicas (soma, subtração, divisão e multiplicação). Deverá ser criada uma função com entrada de parâmetros e o retorno do resultado para o programa principal.
+
 programa {
-    real soma, subtracao, multiplicacao, divisao
+    real soma = 0
+    real subtracao = 0 
+    real multiplicacao = 0
+    real divisao = 0
+
     funcao somar(){
       real valorA = 0
       real valorB = 0
@@ -23,6 +30,7 @@ programa {
           caso contrario:
             escreva("Opção inválida! Calculadora encerrando!\n")
         }
+      soma += result
     }
 
     funcao subtrair(){
@@ -48,6 +56,7 @@ programa {
           caso contrario:
             escreva("Opção inválida! Calculadora encerrando!\n")
         }
+      subtracao += result
     }
 
   funcao inicio() {
