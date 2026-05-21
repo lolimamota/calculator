@@ -1,26 +1,55 @@
-// Desenvolva um programa de uma calculadora simples apenas com as operações básicas (soma, subtração, divisão e multiplicação). Deverá ser criada uma função com entrada de parâmetros e o retorno do resultado para o programa principal.programa {
+programa {
     real soma, subtracao, multiplicacao, divisao
     funcao somar(){
       real valorA = 0
       real valorB = 0
-      escreva("Digite o primeiro valor da sua soma: \n")
-      leia(valorA)
-      escreva("Digite o segundo valor da sua soma: \n")
-      leia(valorB)
+        escreva("Digite a primeira parcela da sua soma: \n")
+        leia(valorA)
+        escreva("Digite a segunda parcela da sua soma: \n")
+        leia(valorB)
       real result = valorA+valorB
-      escreva(valorA," + ", valorB," = ", result)
-      escreva("1. Fazer nova soma\n 2.Menu Principal\nEscolha a sua opção: ")
+        escreva(valorA," + ", valorB," = ", result)
+        escreva("\n")
+        escreva("\n1. Fazer nova soma\n2. Menu Principal\nEscolha a sua opção: ")
       inteiro menuSoma
-      leia(menuSoma)
-      escolha(menuSoma){
-        caso 1: 
-          somar()
-          pare
-        caso 2:
-          inicio()
-
-      }
+        leia(menuSoma)
+        escolha(menuSoma){
+          caso 1: 
+            somar()
+            pare
+          caso 2:
+            inicio()
+            pare
+          caso contrario:
+            escreva("Opção inválida! Calculadora encerrando!\n")
+        }
     }
+
+    funcao subtrair(){
+      real minuendo = 0
+      real subtraendo = 0
+        escreva("Digite o valor do minuendo da sua subtração: \n")
+        leia(minuendo)
+        escreva("Digite o valor do subtraendo da sua subtração: \n")
+        leia(subtraendo)
+      real result = minuendo-subtraendo
+        escreva(minuendo, " - ", subtraendo," = ", result)
+        escreva("\n")
+        escreva("\n1. Fazer nova subtração\n2. Menu Principal\nEscolha a sua opção: ")
+      inteiro menuSubtrair
+        leia(menuSubtrair)
+        escolha(menuSubtrair){
+          caso 1:
+            subtrair()
+            pare
+          caso 2:
+            inicio()
+            pare
+          caso contrario:
+            escreva("Opção inválida! Calculadora encerrando!\n")
+        }
+    }
+
   funcao inicio() {
     escreva("Escolha a sua operação!\n 1.Adição (+)\n 2.Subtração (-)\n 3.Multiplicação(*)\n 4.Divisão\n 5.Sair\n")
     escreva(": ")
@@ -50,4 +79,4 @@
         escreva("Opção inválida! Tente novamente \n")
     }
   }
-
+}
