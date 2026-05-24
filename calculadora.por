@@ -59,6 +59,60 @@ programa {
       subtracao += result
     }
 
+    funcao multiplicar(){
+      real valorA = 0
+      real valorB = 0
+        escreva("Digite o primeiro fator da sua multiplicação: \n")
+        leia(valorA)
+        escreva("Digite o segundo fator da sua multiplicação: \n")
+        leia(valorB)
+      real result = valorA * valorB
+        escreva(valorA, " x ", valorB, " = ", result)
+        escreva("\n")
+        escreva("\n1. Fazer nova multiplicação\n2. Menu Principal\nEscolha a sua opção: ")
+      inteiro menuMultiplicar
+        leia(menuMultiplicar)
+        escolha(menuMultiplicar){
+          caso 1:
+            multiplicar()
+            pare
+          caso 2:
+            inicio()
+            pare
+          caso contrario:
+            escreva("Opção inválida! Calculadora encerrando!\n")
+        }
+      multiplicacao += result
+    }
+
+    funcao dividir(){
+      real dividendo = 0
+      real divisor = 0
+      real quociente = 0
+      real resto = 0
+        escreva("Digite o dividendo da sua divisão: \n")
+        leia(dividendo)
+        escreva("Digite o divisor da sua divisão: \n")
+        leia(divisor)
+      real result = dividendo / divisor
+        escreva(dividendo, " / ", divisor, " = ", quociente, " com resto ", resto)
+        escreva("\n")
+        escreva("\n1. Fazer nova divisão\n2. Menu Principal\nEscolha a sua opção: ")
+      inteiro menuDividir
+        leia(menuDividir)
+        escolha(menuDividir){
+          caso 1:
+            dividir()
+            pare
+          caso 2:
+            inicio()
+            pare
+          caso contrario:
+            escreva("Opção inválida! Calculadora encerrando!\n")
+        }
+      divisao += result
+    }
+
   funcao inicio() {
     escreva("Escolha a sua operação!\n 1.Adição (+)\n 2.Subtração (-)\n 3.Multiplicação(*)\n 4.Divisão\n 5.Sair\n")
     escreva(": ")
