@@ -3,7 +3,7 @@
 
 programa {
     real soma = 0
-    real subtracao = 0 
+    real subtracao = 0
     real multiplicacao = 0
     real divisao = 0
 
@@ -88,13 +88,12 @@ programa {
     funcao dividir(){
       real dividendo = 0
       real divisor = 0
-      real quociente = 0
-      real resto = 0
         escreva("Digite o dividendo da sua divisão: \n")
         leia(dividendo)
         escreva("Digite o divisor da sua divisão: \n")
         leia(divisor)
-      real result = dividendo / divisor
+      real quociente = dividendo/divisor
+      real resto = dividendo%divisor
         escreva(dividendo, " / ", divisor, " = ", quociente, " com resto ", resto)
         escreva("\n")
         escreva("\n1. Fazer nova divisão\n2. Menu Principal\nEscolha a sua opção: ")
