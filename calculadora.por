@@ -2,10 +2,10 @@
 // Desenvolva um programa de uma calculadora simples apenas com as operações básicas (soma, subtração, divisão e multiplicação). Deverá ser criada uma função com entrada de parâmetros e o retorno do resultado para o programa principal.
 
 programa {
-    real soma = 0
-    real subtracao = 0
-    real multiplicacao = 0
-    real divisao = 0
+    // real soma = 0
+    // real subtracao = 0 
+    // real multiplicacao = 0
+    // real divisao = 0
 
     funcao somar(){
       real valorA = 0
@@ -30,7 +30,7 @@ programa {
           caso contrario:
             escreva("Opção inválida! Calculadora encerrando!\n")
         }
-      soma += result
+      // soma += result
     }
 
     funcao subtrair(){
@@ -56,7 +56,7 @@ programa {
           caso contrario:
             escreva("Opção inválida! Calculadora encerrando!\n")
         }
-      subtracao += result
+      // subtracao += result
     }
 
     funcao multiplicar(){
@@ -82,7 +82,7 @@ programa {
           caso contrario:
             escreva("Opção inválida! Calculadora encerrando!\n")
         }
-      multiplicacao += result
+      // multiplicacao += result
     }
 
     funcao dividir(){
@@ -109,7 +109,7 @@ programa {
           caso contrario:
             escreva("Opção inválida! Calculadora encerrando!\n")
         }
-      divisao += result
+      // divisao += result
     }
 
   funcao inicio() {
